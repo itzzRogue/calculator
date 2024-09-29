@@ -1,0 +1,113 @@
+/* General body styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #669fe9;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 320px;  /* Limit the max width */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+/* Style buttons for all screen sizes */
+button {
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+button:active {
+  background-color: #bbb;
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 600px) {
+  .calculator {
+      padding: 10px;
+  }
+
+  #display {
+      height: 40px;
+      font-size: 20px;
+  }
+
+  button {
+      height: 45px;
+      font-size: 16px;
+  }
+}
+
+/* Media query for extra small devices */
+@media (max-width: 400px) {
+  .buttons {
+      grid-gap: 5px;
+  }
+
+  button {
+      height: 40px;
+      font-size: 14px;
+  }
+
+  .title {
+      font-size: 20px;
+  }
+}
